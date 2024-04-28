@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@250..700&display=swap');
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .home-content {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .navigation a {
+        margin: 10px;
+    }
+    .profile img {
+        width: 80%;
+        margin: auto;
+    }
+    /* Add more media query adjustments as needed */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Fredoka', sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+
+}
+.imgdiv{
+    display: flex;
+}
+.prof{
+    display: inline;
+}
+.pro{
+    width: auto;
+    height: auto;
+}
+
+.heading {
+    color: #fff;
+}
+
+body {
+    display: flex;
+    background-color: rgb(4, 36, 91);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 5%; /* Adjust padding for smaller screens */
+    width: 100%; /* Adjust width for smaller screens */
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(4, 36, 91);
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1em; /* Adjust font size for smaller screens */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px; /* Adjust margin for smaller screens */
+    margin-right: 5px;
+    /* background-color: rgb(91, 90,
+     */
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.profile {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 100vh; /* Adjust min-height for smaller screens */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 5% 0; /* Adjust padding for smaller screens */
+    margin-top: 10px;
+}
+
+.home-content {
+    max-width: 90%;
+    color: #fff;
+    margin: auto; /* Center horizontally */
+    margin-top: 150px;
+    margin-bottom: 50px; /* Reduce margin between home-content and home-sci */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center the text */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center vertically */
+}
+
+.home-sci {
+    margin-top: 50px; /* Add margin between home-content and home-sci */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .home-content {
+        margin-top: 100px;
+        margin-bottom: 30px; /* Reduce margin between home-content and home-sci */
+    }
+
+    .home-sci {
+        margin-top: 30px; /* Reduce margin between home-content and home-sci */
+    }
+}
+
+
+.home-sci {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-sci a i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px 5px 20px 0;
+    border-radius: 50%;
+    transition: text-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.home-sci a i:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.5), 0 0 70px rgba(255, 255, 255, 0.5); /* Apply glow effect on hover */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .home-sci {
+        margin-top: 30px;
+    }
+
+    .home-sci a i {
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+        margin: 10px 5px 15px 0;
+    }
+}
+
+
+.text {
+    color: rgb(136, 237, 237);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navigation a {
+        font-size: 0.9em;
+        margin-left: 10px;
+    }
+
+    .profile {
+        padding: 70px 5% 0;
+    }
+
+    .home-content {
+        margin-top: 100px;
+        margin-left: 5%;
+    }
+}
+
+/* ABOUT SECTION */
+
+
+.content-wrapper {
+    min-height: 100vh; /* Ensure content fills at least the height of the viewport */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center; 
+    margin-left: 20px;
+    width: 1470px;
+    border-radius: 20px;
+    height: 1000px;
+}
+
+.about-img img {
+    width: 500px;
+    margin-left: -20vh;
+    margin-top: 230px;
+    margin-right: 20px; /* Add margin on the right side of the image */
+}
+
+.description {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 820px; /* Adjusted width to accommodate margins */
+    height: 900px;
+    margin: 80px auto; /* Adjust the margin for the whole element */
+    margin-left: 40px; /* Add margin from the left side */
+    margin-right: 40px; /* Add margin from the right side */
+    padding: 20px; /* Add padding around the text content */
+    font-size: 19px;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(108, 116, 137);
+}
+
+
+.heading-about{
+    color: rgb(253, 253, 253);
+    background-color: rgb(49, 48, 48);
+    font-size: 50px;
+    display: flex;
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 55vh;
+    height: 10vh;
+    border: 2px solid rgb(34, 33, 33);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(3, 3, 3);
+    padding-left: 20px;
+}
+/* ------------------------------- */
+
+
+.description {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 820px;
+    height: 800px;
+    margin: 80px auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.heading-service{
+    color: rgb(76, 79, 215);
+    background-color: rgb(240, 250, 255);
+    width: 58vh;
+    height: 10vh;
+    font-size: 70px;
+    margin-top: 120px;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+.para {
+    font-family: sans-serif;
+    color: #fff;
+    margin-left: 40vh; /* Adjust as needed */
+    margin-right: 70vh; /* Adjust as needed */
+    width: calc(10 - 20vh); /* Adjust as needed */
+    margin-top: -45vh; /* Adjust as needed */
+    font-size: 20px;
+    padding: 20px; /* Add padding for spacing */
+    display: flex;
+    margin-bottom: 90px;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(108, 116, 137);
+}
+
+
+.service-image img {
+    max-width: 300px; 
+    height: auto;
+    margin-top: 120px;
+    margin-left: 90vh; 
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.service-image img:hover {
+    animation: scale 1.5s forwards;
+}
+@keyframes scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.5);
+    }
+  }
+
+  @keyframes scale-down {
+    from {
+      transform: scale(1.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .service-image img:hover {
+    animation: scale 1.5s forwards;
+  }
+  
+  .service-image img:hover {
+    animation: scale 1.5s forwards;
+  }
+  
+  .service-image img {
+    max-width: 300px; 
+    height: auto;
+    margin-top: 120px;
+    margin-left: 150vh; 
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-image img:hover {
+    animation: scale 1.5s forwards;
+  }
+  
+  .service-image img {
+    animation: scale-down 1.5s forwards;
+  }
+  
+/* ------------------CONTACT PAGE ------------- */
+
+.contact{
+    background-color:rgb(53, 80, 112);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+.contact-heading{
+    margin-top: 20vh;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    margin-left: 20vh;
+    border: 2px white;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+.contact-img img{
+    width: 110vh;
+    height: 60vh;
+    margin-top: -1000px;
+    margin-bottom: -10px;
+}
+.contact-icon {
+    margin-top: 30px; /* Add margin between home-content and home-sci */
+    margin-left: -105vh;
+    /* margin-top: 160vh; */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-icon {
+        margin-top: 100px;
+        margin-bottom: 80px; /* Reduce margin between home-content and home-sci */
+    }
+
+    .contact-icon {
+        margin-top: 30px; /* Reduce margin between home-content and home-sci */
+    }
+}
+
+
+.contact-icon {
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icon a i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;;
+    font-size: 50px;
+    color: #000000;
+    text-decoration: none;
+    /* margin: 15px 5px 20px 0; */
+    border-radius: 50%;
+    margin-left: 65vh;
+    margin-right: -55vh;
+    transition: text-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.contact-icon a i:hover {
+    text-shadow: 0 0 10px rgba(82, 80, 80, 0.5), 0 0 20px rgba(92, 90, 90, 0.5), 0 0 30px rgba(81, 80, 80, 0.5), 0 0 40px rgba(78, 77, 77, 0.5), 0 0 50px rgba(74, 72, 72, 0.5), 0 0 60px rgba(255, 255, 255, 0.5), 0 0 70px rgba(255, 255, 255, 0.5); /* Apply glow effect on hover */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-icon {
+        margin-top: 30px;
+    }
+
+    .contact-icon a i {
+        font-size: 50px;
+        width: 30px;
+        height: 30px;
+        margin-left: 65vh;
+        margin-bottom: 20px;
+        margin-right: -55vh;
+        /* margin: 10px 5px 15px 0; */
+    }
+}
+
+.contact-container{
+    background-color: aliceblue;
+    width: 60vh;
+    height: 60vh;
+    margin-left: 130vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20vh;
+    border-radius: 20px;
+
+
+}
+.contact-container img{
+    text-align: center;
+    align-items: center;
+    width: 50px;
+    display: flex;
+    margin-top: -290px;
+    margin-left: 20vh;
+}
+.gmail{
+    margin-top: -40vh;
+    font-size: 30px;
+}
+.gmaildesc{
+    margin-left: -150px;
+    margin-top: -19vh;
+}
+.contact-container img[src*="whatsapp.png"] {
+    margin-left: -26vh;
+    margin-top: 10vh;
+    display: flex;
+  }
+
+.phnum{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+    
+}
+.num{
+    margin-left: -20vh;
+    margin-top: 25vh;
+}
