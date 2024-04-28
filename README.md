@@ -1,2 +1,2 @@
 # Portfolio-Website
-Portflio Website using htm,css,js
+Portflio Website using html,css,js
